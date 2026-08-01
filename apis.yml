@@ -1,7 +1,27 @@
 aid: qunar-com
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qunar-com.png
 name: Qunar Com
-description: Qunar Com is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Qunar (去哪儿网, "where to go") is a Chinese online travel platform founded in
+  2005 and headquartered in Beijing. It operates a travel search and booking
+  service covering domestic and international flight tickets, hotel
+  reservations, train and bus tickets, vacation packages, and travel deals.
+  Qunar was NASDAQ-listed (QUNR) and is majority owned by Trip.com Group
+  (formerly Ctrip). It was surfaced as a portfolio company of Mayfield and
+  added to the API Evangelist network as a stub for enrichment; no public
+  developer portal or API program was discoverable at open.qunar.com,
+  developer.qunar.com, or api.qunar.com during this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/qunar-com/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Travel
+- Hotels
+- Flights
+- Travel Booking
+- Travel Search
+- Online Travel Agency
+- China
+common:
+- type: DomainSecurity
+  url: security/qunar-com-domain-security.yml
+- type: Website
+  url: https://www.qunar.com/
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
